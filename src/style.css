@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #2f2f2f;
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+.card {
+  width: 260px;
+  height: 140px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.086);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+  cursor: grab;
+  user-select: none;
+  touch-action: none; /* important for pointer dragging on mobile */
+  will-change: transform;
+}
+.card:active {
+  cursor: grabbing;
+}
